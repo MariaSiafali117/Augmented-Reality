@@ -23,7 +23,7 @@
 <script>
     AFRAME.registerComponent("marker-distance", {
         init: function () {
-            this.oxygen = document.querySelector("#oxygen")
+            this.Oxygen8 = document.querySelector("#Oxygen8")
             this.Hydrogen1 = document.querySelector("#Hydrogen1")
             this.water = document.querySelector("#water")
             this.marker1 = document.querySelector("#marker1")
@@ -42,11 +42,11 @@
             markerDistance = marker1Pos.disdtanceTo(marker2Pos);
 
             if (markerDistance < 2) {
-                this.oxygen.setAttribute("visible", false)
+                this.Oxygen8.setAttribute("visible", false)
                 this.Hydrogen1.setAttribute("visible", false)
                 this.water.setAttribute("visible", true)
             } else {
-                this.oxygen.setAttribute("visible", true)
+                this.Oxygen8.setAttribute("visible", true)
                 this.Hydrogen1.setAttribute("visible", true)
                 this.water.setAttribute("visible", false)
             }
@@ -94,7 +94,7 @@
         <!--add animation-->
 
     <a-assets>>
-        <a-asset-item id="oxygen" src="./assets/oxygen.gltf"></a-asset-item>
+        <a-asset-item id="Oxygen8" src="./assets/oxygen.gltf"></a-asset-item>
     </a-assets>
 
         <a-assets>
@@ -110,7 +110,7 @@
 
         <a-marker id="marker1" type="pattern" url="./assets/pattern-card-O.patt">
             <a-image src="assets/card-O.png" rotation="-90 0 0" width: 1.5; height: 1.5></a-image>
-            <a-entity position="0 1 0" gltf-model="#oxygen" scale="0.5 0.5 0.5" rotation="-90 0 0"
+            <a-entity position="0 1 0"  scale="0.5 0.5 0.5" rotation="-90 0 0" gltf-model="#Oxygen8"
                 animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 360; loop: true;">
             </a-entity>
         </a-marker>
