@@ -33,7 +33,7 @@
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 
         <a-entity id="cameraRig">
-            <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="5 4 5"></a-entity>
+            <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 1 0"></a-entity>
         </a-entity>
 
         <a-assets>
@@ -42,11 +42,11 @@
 
         <!--Click in the middle-->
 
-         <a-entity position="5 4 5">
+         <a-entity position="0 0 -120">
 
-        <a-entity gltf-model="#object" scale="5 5 5" class="click"
+        <a-entity gltf-model="#object" scale="3 3 3" class="click" 
                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"
-                gps-entity-place="latitude: 44.506477; longitude: 11.301524;" text-show>
+                gps-entity-place="latitude: 31.239752; longitude: 121.499588;" text-show>
                 
                 <a-entity class="clickable"
                           position="-1 6.5 1"
@@ -58,7 +58,7 @@
 
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 44.504348; simulateLongitude: 11.301027; minDistance: 1; maxDistance: 700;"
+            gps-camera="simulateLatitude: 31.239752; simulateLongitude: 121.499588; minDistance: 1; maxDistance: 700;"
         >
 		</a-camera>
 	</a-scene>
